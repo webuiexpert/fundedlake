@@ -2,6 +2,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import OneStepPriceCard from "./OneStepPriceCard";
 import TwoStepPriceCard from "./TwoStepPriceCard";
+import InstantPriceCard from "./InstantPriceCard";
 
 export default () => (
   <Tabs className="priceTab lg:text-2xl md:text-lg text-sm text-white">
@@ -249,11 +250,9 @@ export default () => (
               MOST POPULAR{" "}
             </span>
           </Tab>
-          <Tab className="text-center hover:bg-white hover:text-dark">$250K</Tab>
-          <Tab className="text-center hover:bg-white hover:text-dark">$400K</Tab>
         </TabList>
         <TabPanel className="10K">
-          <OneStepPriceCard />
+          <InstantPriceCard />
           <div className="headingContainer mt-12 flex flex-col items-center justify-center md:gap-10 gap-8">
             <h2 class="text-center lg:text-8xl md:text-4xl text-3xl font-bold">
               <span className="text-primary">$75</span> for
