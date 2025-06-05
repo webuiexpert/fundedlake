@@ -8,8 +8,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-black text-white px-4 py-3 shadow-md">
-      <div className="container mx-auto flex items-center justify-between">
+    <nav className="bg-dark text-white shadow-md font-lexend">
+      <div className="container w-full max-w-6xl h-100 mx-auto px-4 py-4 lg:px-0 lg:py-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="text-xl font-bold flex items-center space-x-2">
           <img src={logo} alt="logo"  />
@@ -30,12 +30,12 @@ const Navbar = () => {
 
         {/* Buttons */}
         <div className="hidden md:flex space-x-4">
-          <Link to="/dashboard" className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded">
+          <a href='https://fundedlakedashboard.propaccount.com/en/sign-in' className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded">
             DASHBOARD
-          </Link>
-          <Link to="/get-funded" className="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 font-bold rounded">
+          </a>
+          <a href='https://fundedlakedashboard.propaccount.com/en/challenges?planid=163' className="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 font-bold rounded">
             GET FUNDED
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}

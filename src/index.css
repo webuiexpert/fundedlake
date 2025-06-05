@@ -1,3 +1,63 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.feature-col:hover h3{
+color: #fff;
+}
+.feature-col:hover svg{
+fill: #000;
+}
+.priceTabUl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.priceTab .react-tabs__tab-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #181818;
+  width: fit-content;
+  margin: 0 auto;
+}
+.priceTab .react-tabs__tab-list li{
+  color: #fff;
+  font-weight: 600;
+}
+.priceTab .react-tabs__tab-list li:hover{
+  color: #181818;
+
+}
+.react-tabs__tab--selected{
+  background-color: #00AEEF !important;
+      border-radius: 0 !important;
+      color: #181818 !important;
+}
+.InnerPriceTab .react-tabs__tab-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  background-color: #181818;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 4px;
+}
+.InnerPriceTab .react-tabs__tab-list li{
+  color: #fff;
+  font-weight: 600;
+  padding: 20px;
+  height: 80px;
+}
+.evalution-phase:hover span{
+  color: #181818;
+}

@@ -1,20 +1,34 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './Components/Navbar'
+import Home from './pages/Home'
+import WhoWeAre from './pages/WhoWeAre'
+import Faq from './pages/Faq'
+import ContactUs from './pages/ContactUs'
+import GiveawayPopup from './Components/GiveawayPopup'
+import Footer from './Components/Footer'
+import useLenis from './hooks/useLenis';
+
 
 function App() {
+
+  useLenis();
+
   return (
-    <Router>
+    <>
+    <GiveawayPopup />
+     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<h1 className="p-4">Home Page</h1>} />
-        <Route path="/who-we-are" element={<h1 className="p-4">Who We Are</h1>} />
-        <Route path="/faqs" element={<h1 className="p-4">FAQs</h1>} />
-        <Route path="/contact" element={<h1 className="p-4">Contact Us</h1>} />
-        <Route path="/dashboard" element={<h1 className="p-4">Dashboard</h1>} />
-        <Route path="/get-funded" element={<h1 className="p-4">Get Funded</h1>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/who-we-are" element={<WhoWeAre />} />
+        <Route path="/faqs" element={<Faq />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
+      <Footer />
     </Router>
+    </>
+   
   )
 }
 
