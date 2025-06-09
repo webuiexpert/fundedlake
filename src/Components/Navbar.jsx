@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-dark text-white shadow-md font-lexend">
-      <div className="container w-full max-w-6xl h-100 mx-auto px-4 py-4 lg:px-0 lg:py-6 flex items-center justify-between">
+      <div className="container w-full max-w-6xl h-100 mx-auto px-4 py-4 lg:px-0 lg:py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="text-xl font-bold flex items-center space-x-2">
           <img src={logo} alt="logo"  />

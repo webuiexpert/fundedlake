@@ -1,6 +1,9 @@
-import heroVideo from "../assets/hero-background-video.mp4";
+import heroVideo from "../assets/hero-background-video1.mp4";
 import Features from "../Components/Features";
+import CertificateMarqueeSlider from "../Components/CertificateMarqueeSlider";
 import PriceTab from "../Components/PriceTab";
+import logo from "../assets/logo.webp";
+import blueArrow from "../assets/icons/blue-arrow-icon.png";
 
 function Home() {
   return (
@@ -8,7 +11,7 @@ function Home() {
       <div className="Main-wrapper">
         {/* Hero Section */}
 
-        <div className="hero-section relative w-full lg:h-screen h-[40vh] overflow-hidden">
+        <div className="hero-section relative flex flex-col items-center justify-center w-full lg:h-screen h-[40vh] overflow-hidden">
           {/* Background Video */}
           <video
             className="absolute top-0 left-0 w-full h-full  object-cover"
@@ -18,6 +21,31 @@ function Home() {
             muted
             playsInline
           />
+          <div className="w-full absolute  z-[9999 w-[100%] h-[100%] bg-gradient-to-b from-[#181818] to-[#f9f9f900]"></div>
+          <div class="relative z-20 top-[20%] h-full flex flex-wrap w-full  mb-10 flex-col items-center text-center">
+            <h2 class="sm:text-[80px] leading-[1.1em] text-3xl font-bold title-font mb-2 text-white">
+              WHERE
+              <span className="text-gredient bg-gradient-to-b from-[#00AEEF] to-[#181818] bg-clip-text text-transparent">
+                {" "}
+                TRADERS
+              </span>
+              <br /> EMPOWER
+              <span className="text-gredient bg-gradient-to-b from-[#00AEEF] to-[#181818] bg-clip-text text-transparent">
+                {" "}
+                WORLD
+              </span>
+            </h2>
+            <p className="text-white text-[24px] mx-auto max-w-4xl font-bold my-6">
+              “Lightning-fast payouts, instant funding, no hidden rules or
+              consistency requirements - take on challenges with up to $400,000
+              in capital!”
+            </p>
+            <img src={logo} className="w-[20%] mt-4" alt="logo" />
+            <div className="community-btn mt-10 relative">
+              <img className="absolute size-[100px] -right-32 -top-[140%]" src={blueArrow} alt="" />
+              <a href="https://fundedlakedashboard.propaccount.com/en/affiliates" target="black"><button className="text-white bg-[linear-gradient(180deg,_rgba(0,107,203,1)_0%,_rgba(15,66,94,1)_95%)] hover:scale-[1.1] duration-300 border border2-white rounded-md px-6 py-4 text-2xl font-bold">JOIN OUR DISCORD COMMUNITY</button></a>
+            </div>
+          </div>
         </div>
 
         {/* Feature Section */}
@@ -30,6 +58,12 @@ function Home() {
 
         <div class="price-table-section font-lexend bg-blackish">
           <PriceTab />
+        </div>
+
+        {/* Certificate of withdrawl Section */}
+
+        <div className="certificate-section">
+          <CertificateMarqueeSlider />
         </div>
 
         {/* Trade World Section */}
@@ -70,7 +104,9 @@ function Home() {
                   JOIN OUR SERVER
                 </h3>
                 <hr className="bg-white h-[1px] w-full"></hr>
-                <h4 className="text-3xl font-bold text-center">Discord Community</h4>
+                <h4 className="text-3xl font-bold text-center">
+                  Discord Community
+                </h4>
                 <p className="text-center lg:w-[80%]">
                   Join the fastest growing Trading Community Discord server to
                   get the latest updates, news and more. Join our discord for
@@ -94,9 +130,13 @@ function Home() {
                   GET ASSISTANCE
                 </h3>
                 <hr className="bg-white h-[1px] w-full"></hr>
-                <h4 className="text-3xl font-bold text-center">Round the Clock Support</h4>
+                <h4 className="text-3xl font-bold text-center">
+                  Round the Clock Support
+                </h4>
                 <p className="text-center lg:w-[80%]">
-                  Email us and benefit from our 24/7 multi-lingual customer support for our traders around the world. To chat with our live agent join our discord channel!
+                  Email us and benefit from our 24/7 multi-lingual customer
+                  support for our traders around the world. To chat with our
+                  live agent join our discord channel!
                 </p>
               </div>
             </div>

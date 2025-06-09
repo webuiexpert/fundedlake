@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import GiveawayPopup from './components/GiveawayPopup';
 import useLenis from './hooks/useLenis';
+import TopBar from './Components/TopBar';
 
 function App() {
   useLenis();
@@ -14,6 +15,7 @@ function App() {
   return (
     <Router>
       <GiveawayPopup />
+      <TopBar />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

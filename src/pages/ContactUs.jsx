@@ -153,36 +153,7 @@ const ContactUs = () => {
           </h1>
         </div>
       </div>
-      <div className="contact-form-section font-lexend py-24 bg-black">
-        <form className="form mx-auto ">
-        <div className="flex">
-          <label className="w-[50%]">
-            <input required placeholder type="text" className="input w-full" />
-            <span>Firstname</span>
-          </label>
-          <label className="w-[50%]">
-            <input required placeholder type="text" className="input w-full" />
-            <span>Lastname</span>
-          </label>
-        </div>
-        <label>
-          <input required placeholder type="email" className="input" />
-          <span>Email</span>
-        </label>
-        <label>
-          <input required placeholder type="password" className="input" />
-          <span>Password</span>
-        </label>
-        <label>
-          <input required placeholder type="password" className="input" />
-          <span>Confirm password</span>
-        </label>
-        <button className="submit">Submit</button>
-        <p className="signin">
-          Already have an acount ? <a href="#">Signin</a>{" "}
-        </p>
-      </form>
-      </div>
+     
       
     </StyledWrapper>
   );

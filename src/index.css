@@ -9,6 +9,10 @@
   margin: 0;
   padding: 0;
 }
+::selection{
+  background-color: #ffae00;
+  color: #fff;
+}
 
 .feature-col:hover h3{
 color: #fff;
@@ -60,4 +64,18 @@ fill: #000;
 }
 .evalution-phase:hover span{
   color: #181818;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+.marquee:hover{
+  animation-play-state: paused;
 }
