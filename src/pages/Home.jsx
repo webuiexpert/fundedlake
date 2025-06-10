@@ -59,7 +59,7 @@ function Home() {
               <img
                 src={blueArrow}
                 alt="arrow"
-                className="absolute w-20 right-[-8rem] top-[-5rem] hidden lg:block"
+                className="absolute w-20 right-[-8rem] top-[-3rem] hidden lg:block"
               />
               <a
                 href="https://fundedlakedashboard.propaccount.com/en/affiliates"

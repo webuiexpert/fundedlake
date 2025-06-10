@@ -60,7 +60,7 @@ function TwoStepPriceCard() {
           <hr className="bg-white h-[1px] w-full my-8" />
           <div className="w-[100%]">
             <ul className="flex w-[100%] flex-col gap-6">
-              {onephase.map((step, idx) => (
+              {secondphase.map((step, idx) => (
                 <li
                   className="flex items-start justify-between gap-10"
                   key={idx}

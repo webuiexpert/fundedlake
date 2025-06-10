@@ -3,7 +3,7 @@ import backgroundImg from "../assets/contact-main-bg.webp"; // replace with your
 const ContactUs = () => {
   return (
     <>
-      <div className="font-lexend relative bg-cover bg-center bg-no-repeat text-white md:h-[80vh] h-[40vh]  flex items-center justify-center text-center px-4"
+      <div className="font-lexend relative bg-cover bg-center bg-no-repeat text-white md:h-[60vh] h-[40vh]  flex items-center justify-center text-center px-4"
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-[#00000065] to-[#000000] opacity-100"></div>

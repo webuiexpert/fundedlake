@@ -13,8 +13,8 @@ function TrustPilotMarquee() {
     const trustImages = [trustpilotimg1, trustpilotimg2, trustpilotimg3, trustpilotimg4, trustpilotimg5, trustpilotimg6, trustpilotimg7, trustpilotimg8, trustpilotimg9]
 
   return (
-    <div className="overflow-hidden md:py-24 whitespace-nowrap bg-[radial-gradient(circle,rgba(2,33,80,1)_6%,rgba(0,0,0,1)_47%)] py-4">
-      <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+    <div className="overflow-hidden md:py-16 whitespace-nowrap bg-[radial-gradient(circle,rgba(2,33,80,1)_6%,rgba(0,0,0,1)_47%)] py-4">
+      <div class="flex flex-wrap w-full mb-16 flex-col items-center text-center">
         <h2 class="sm:text-[50px] leading-[1.1em] text-2xl font-bold title-font mb-2 text-white">
           WATCH SOME OF OUR<br/>
           <span className="text-gredient bg-gradient-to-b from-[#00AEEF] to-[#181818] bg-clip-text text-transparent">TRUST PILOT</span> REVIEWS

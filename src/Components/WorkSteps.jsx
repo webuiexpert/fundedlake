@@ -6,7 +6,7 @@ function WorkSteps() {
   return (
     <div className="bg-black  py-12 text-white flex flex-col md:flex-row justify-center items-stretch gap-6 md:px-4">
       <div className="grid md:grid-cols-3 grid-cols-1 lg:gap-10 md:gap-6 gap-4 lg:max-w-6xl md:w-full w-[95%] mx-auto">
-        <div className="col relative bg-gradient-to-b from-[#000] to-[#000c15] md:p-4 w-[100%] flex flex-col items-start md:gap-5 gap-3 justify-between rounded-md md:mt-0 mt-6">
+        <div className="col relative lg:py-10 bg-gradient-to-b from-dark to-[#000c15] md:p-4 w-[100%] flex flex-col items-start md:gap-5 gap-3 justify-between rounded-md md:mt-0 mt-6">
           <div className="flex flex-col md:gap-6 gap-4 items-start">
             <span className="stepNum text-primary w-fit text-1xl py-1 px-4 rounded-lg border border-2-primary">
               STEP 1
@@ -24,12 +24,12 @@ function WorkSteps() {
             Evalution phase
           </span>
           <img
-            className="rightArrow lg:w-[100px] w-[70px] absolute md:-right-5 lg:top-2/3 md:top-1/3 right-24 -bottom-24 z-50 md:rotate-0 rotate-90"
+            className="rightArrow w-[70px] absolute md:-right-5 lg:top-2/3 md:top-1/3 right-24 -bottom-24 z-50 md:rotate-0 rotate-90"
             src={rightArrow}
             alt=""
           />
         </div>
-        <div className="col relative bg-gradient-to-b from-[#000] to-[#000c15] md:p-4 w-[100%] flex flex-col items-start md:gap-5 gap-3 justify-between rounded-md md:mt-0 mt-6">
+        <div className="col relative lg:py-10 bg-gradient-to-b from-dark to-[#000c15] md:p-4 w-[100%] flex flex-col items-start md:gap-5 gap-3 justify-between rounded-md md:mt-0 mt-6">
           <div className="flex flex-col md:gap-6 gap-4 items-start">
             <span className="stepNum text-primary w-fit text-1xl py-1 px-4 rounded-lg border border-2-primary">
               STEP 2
@@ -45,12 +45,12 @@ function WorkSteps() {
             Funded
           </span>
           <img
-            className="rightArrow lg:w-[100px] w-[70px] absolute md:-right-5 lg:top-2/3 md:top-1/3 right-24 -bottom-24 z-50 md:rotate-0 rotate-90"
+            className="rightArrow w-[70px] absolute md:-right-5 lg:top-2/3 md:top-1/3 right-24 -bottom-24 z-50 md:rotate-0 rotate-90"
             src={rightArrow}
             alt=""
           />
         </div>
-        <div className="col relative bg-gradient-to-b from-[#000] to-[#000c15] md:p-4 w-[100%] flex flex-col items-start md:gap-5 gap-3 justify-between rounded-md md:mt-0 mt-6">
+        <div className="col relative lg:py-10 bg-gradient-to-b from-dark to-[#000c15] md:p-4 w-[100%] flex flex-col items-start md:gap-5 gap-3 justify-between rounded-md md:mt-0 mt-6">
           <div className="flex flex-col md:gap-6 gap-4 items-start">
             <span className="stepNum text-primary w-fit text-1xl py-1 px-4 rounded-lg border border-2-primary">
             STEP 3

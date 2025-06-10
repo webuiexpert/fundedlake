@@ -7,13 +7,13 @@ import InstantPriceCard from "./InstantPriceCard";
 export default () => (
   <Tabs className="priceTab lg:text-lg md:text-lg text-sm text-white">
     <TabList className="priceTabUl">
-      <Tab className="p-6 bg-dark hover:bg-white duration-200 hover:text-dark rounded-none">
+      <Tab className="cursor-pointer p-6 bg-dark hover:bg-white duration-200 hover:text-dark rounded-none">
         ONE STEP
       </Tab>
-      <Tab className="p-6 bg-dark hover:bg-white duration-200 hover:text-dark rounded-none">
+      <Tab className="cursor-pointer p-6 bg-dark hover:bg-white duration-200 hover:text-dark rounded-none">
         TWO STEP
       </Tab>
-      <Tab className="p-6 bg-dark hover:bg-white duration-200 hover:text-dark rounded-none">
+      <Tab className="cursor-pointer p-6 bg-dark hover:bg-white duration-200 hover:text-dark rounded-none">
         INSTANT
       </Tab>
     </TabList>
@@ -21,10 +21,10 @@ export default () => (
     <TabPanel className="one-step InnerPriceTab mt-10 lg:text-lg">
       <Tabs>
         <TabList>
-          <Tab className="text-center hover:bg-white hover:text-dark">$10K</Tab>
-          <Tab className="text-center hover:bg-white hover:text-dark">$25K</Tab>
-          <Tab className="text-center hover:bg-white hover:text-dark">$50K</Tab>
-          <Tab className="text-center hover:bg-white hover:text-dark  leading-6">
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer">$10K</Tab>
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer">$25K</Tab>
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer">$50K</Tab>
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer leading-6">
             $100K
             <br />
             <span class="lg:text-[10px] text-[5px] text-secondory">
@@ -32,8 +32,8 @@ export default () => (
               MOST POPULAR{" "}
             </span>
           </Tab>
-          <Tab className="text-center hover:bg-white hover:text-dark">$250K</Tab>
-          <Tab className="text-center hover:bg-white hover:text-dark">$400K</Tab>
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer">$250K</Tab>
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer">$400K</Tab>
         </TabList>
         <TabPanel className="10K">
           <OneStepPriceCard />
@@ -43,7 +43,7 @@ export default () => (
               <span className="text-primary"> 10K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -58,7 +58,7 @@ export default () => (
               <span className="text-primary"> 25K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=100" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=100" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -73,7 +73,7 @@ export default () => (
               <span className="text-primary"> 50K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=101" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=101" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -88,7 +88,7 @@ export default () => (
               <span className="text-secondory"> 100K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=102" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=102" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -103,7 +103,7 @@ export default () => (
               <span className="text-primary"> 250K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=103" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=103" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -118,7 +118,7 @@ export default () => (
               <span className="text-primary"> 400K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=104" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=104" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -130,19 +130,18 @@ export default () => (
     <TabPanel className="two-step InnerPriceTab mt-10 lg:text-lg">
       <Tabs>
         <TabList>
-          <Tab className="text-center hover:bg-white hover:text-dark">$10K</Tab>
-          <Tab className="text-center hover:bg-white hover:text-dark">$25K</Tab>
-          <Tab className="text-center hover:bg-white hover:text-dark">$50K</Tab>
-          <Tab className="text-center hover:bg-white hover:text-dark  leading-6">
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer">$10K</Tab>
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer">$25K</Tab>
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer">$50K</Tab>
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer leading-6">
             $100K
             <br />
             <span class="lg:text-[10px] text-[5px] text-secondory">
-              {" "}
-              MOST POPULAR{" "}
+              MOST POPULAR
             </span>
           </Tab>
-          <Tab className="text-center hover:bg-white hover:text-dark">$250K</Tab>
-          <Tab className="text-center hover:bg-white hover:text-dark">$400K</Tab>
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer">$250K</Tab>
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer">$400K</Tab>
         </TabList>
         <TabPanel className="10K">
           <TwoStepPriceCard />
@@ -152,7 +151,7 @@ export default () => (
               <span className="text-primary"> 10K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=160" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=160" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -163,11 +162,11 @@ export default () => (
           <TwoStepPriceCard />
           <div className="headingContainer mt-12 flex flex-col items-center justify-center md:gap-10 gap-8">
             <h2 class="text-center lg:text-6xl md:text-4xl text-3xl font-bold">
-              <span className="text-primary">$190</span> for
+              <span className="text-primary">$125</span> for
               <span className="text-primary"> 25K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=100" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=161" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -178,11 +177,11 @@ export default () => (
           <TwoStepPriceCard />
           <div className="headingContainer mt-12 flex flex-col items-center justify-center md:gap-10 gap-8">
             <h2 class="text-center lg:text-6xl md:text-4xl text-3xl font-bold">
-              <span className="text-primary">$375</span> for
+              <span className="text-primary">$225</span> for
               <span className="text-primary"> 50K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=101" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=162" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -193,11 +192,11 @@ export default () => (
           <TwoStepPriceCard />
           <div className="headingContainer mt-12 flex flex-col items-center justify-center md:gap-10 gap-8">
             <h2 class="text-center lg:text-6xl md:text-4xl text-3xl font-bold">
-              <span className="text-secondory">$750</span> for
+              <span className="text-secondory">$450</span> for
               <span className="text-secondory"> 100K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=102" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -212,7 +211,7 @@ export default () => (
               <span className="text-primary"> 250K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=103" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=164" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -227,7 +226,7 @@ export default () => (
               <span className="text-primary"> 400K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=104" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=165" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -239,27 +238,42 @@ export default () => (
     <TabPanel className="instant InnerPriceTab mt-10 lg:text-lg">
       <Tabs>
         <TabList>
-          <Tab className="text-center hover:bg-white hover:text-dark">$10K</Tab>
-          <Tab className="text-center hover:bg-white hover:text-dark">$25K</Tab>
-          <Tab className="text-center hover:bg-white hover:text-dark">$50K</Tab>
-          <Tab className="text-center hover:bg-white hover:text-dark  leading-6">
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer">$5K</Tab>
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer">$10K</Tab>
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer">$25K</Tab>
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer">$50K</Tab>
+          <Tab className="text-center hover:bg-white hover:text-dark cursor-pointer leading-6">
             $100K
             <br />
             <span class="lg:text-[10px] text-[5px] text-secondory">
-              {" "}
-              MOST POPULAR{" "}
+              MOST POPULAR
             </span>
           </Tab>
         </TabList>
+        <TabPanel className="5K">
+          <InstantPriceCard />
+          <div className="headingContainer mt-12 flex flex-col items-center justify-center md:gap-10 gap-8">
+            <h2 class="text-center lg:text-6xl md:text-4xl text-3xl font-bold">
+              <span className="text-primary">$200</span> for
+              <span className="text-primary"> 5K </span> Account
+            </h2>
+            <a
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=180" target="_blank"
+              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+            >
+              <button>GET FUNDED</button>
+            </a>
+          </div>
+        </TabPanel>
         <TabPanel className="10K">
           <InstantPriceCard />
           <div className="headingContainer mt-12 flex flex-col items-center justify-center md:gap-10 gap-8">
             <h2 class="text-center lg:text-6xl md:text-4xl text-3xl font-bold">
-              <span className="text-primary">$75</span> for
+              <span className="text-primary">$400</span> for
               <span className="text-primary"> 10K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=181" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -270,11 +284,11 @@ export default () => (
           <OneStepPriceCard />
           <div className="headingContainer mt-12 flex flex-col items-center justify-center md:gap-10 gap-8">
             <h2 class="text-center lg:text-6xl md:text-4xl text-3xl font-bold">
-              <span className="text-primary">$190</span> for
+              <span className="text-primary">$1,125</span> for
               <span className="text-primary"> 25K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=100" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=182" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -285,11 +299,11 @@ export default () => (
           <OneStepPriceCard />
           <div className="headingContainer mt-12 flex flex-col items-center justify-center md:gap-10 gap-8">
             <h2 class="text-center lg:text-6xl md:text-4xl text-3xl font-bold">
-              <span className="text-primary">$375</span> for
+              <span className="text-primary">$2,500</span> for
               <span className="text-primary"> 50K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=101" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=183" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -300,11 +314,11 @@ export default () => (
           <OneStepPriceCard />
           <div className="headingContainer mt-12 flex flex-col items-center justify-center md:gap-10 gap-8">
             <h2 class="text-center lg:text-6xl md:text-4xl text-3xl font-bold">
-              <span className="text-secondory">$750</span> for
+              <span className="text-secondory">$5,000</span> for
               <span className="text-secondory"> 100K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=102" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=184" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -319,7 +333,7 @@ export default () => (
               <span className="text-primary"> 250K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=103" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=103" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>
@@ -334,7 +348,7 @@ export default () => (
               <span className="text-primary"> 400K </span> Account
             </h2>
             <a
-              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=104" target="blank"
+              href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=104" target="_blank"
               className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
             >
               <button>GET FUNDED</button>

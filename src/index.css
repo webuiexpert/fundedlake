@@ -61,6 +61,10 @@ fill: #000;
   font-weight: 600;
   padding: 20px;
   height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .evalution-phase:hover span{
   color: #181818;

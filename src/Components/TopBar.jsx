@@ -20,7 +20,7 @@ function TopBar() {
     {/* Close Button */}
     <SquareX
       onClick={() => setVisible(false)}
-      className="text-white size-6 md:size-7 absolute top-2 right-4 md:right-6 cursor-pointer"
+      className="text-white size-6 md:size-7 absolute top-5 right-4 md:right-6 cursor-pointer"
       aria-label="Close promo"
     />
   </div>
