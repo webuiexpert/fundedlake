@@ -4,6 +4,8 @@ import CertificateMarqueeSlider from "../Components/CertificateMarqueeSlider";
 import PriceTab from "../Components/PriceTab";
 import logo from "../assets/logo.webp";
 import blueArrow from "../assets/icons/blue-arrow-icon.png";
+import TrustPilotMarquee from "../Components/TrustPilotMarquee";
+import WorkSteps from "../Components/workSteps";
 
 function Home() {
   return (
@@ -52,6 +54,13 @@ function Home() {
 
         <div class="feature-section font-lexend bg-blackish">
           <Features />
+        </div>
+        
+         {/* Steps Section */}
+
+        <div className="bg-blackish lg:py-10 md:py-6 py-6">
+          <h2 className="text-white lg:text-6xl md:4xl text-3xl font-bold uppercase text-center leading-[1.2em] -mt-5">how it works</h2>
+          <WorkSteps />           
         </div>
 
         {/* Price Tab Section */}
@@ -141,6 +150,12 @@ function Home() {
               </div>
             </div>
           </div>
+        </div>
+ 
+             {/* Trust Pilot Section */}
+
+        <div className="trustpilot-section">
+          <TrustPilotMarquee />
         </div>
       </div>
     </>

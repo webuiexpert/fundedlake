@@ -66,9 +66,22 @@ fill: #000;
   color: #181818;
 }
 
+.marquee-container:before {
+    content: "";
+    color: #ffff;
+    position: absolute;
+    left: -10%;
+    top: 0;
+    width: 400px;
+    background-position: left center;
+    background-size: cover;
+    height: 100%;
+    z-index: 999;
+}
+
 @keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-100%); }
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0%); }
 }
 
 .marquee {
@@ -77,5 +90,19 @@ fill: #000;
   animation: marquee 20s linear infinite;
 }
 .marquee:hover{
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+.trustPilot-marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+.trustPilot-marquee:hover{
   animation-play-state: paused;
 }

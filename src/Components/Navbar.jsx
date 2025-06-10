@@ -26,6 +26,7 @@ const Navbar = () => {
           <Link to="/" className="hover:text-blue-400">
             CONTACT US
           </Link>
+          <a href="https://fundedlakedashboard.propaccount.com/en/affiliates" target='_blank'>AFFILIATE PROGRAM</a>
         </div>
 
         {/* Buttons */}
