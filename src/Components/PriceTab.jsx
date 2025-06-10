@@ -5,7 +5,7 @@ function PriceTab() {
   return (
     <div class="container w-full max-w-6xl h-100 mx-auto px-4 py-4 lg:px-0 lg:py-2">
       <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-        <h2 class="sm:text-[80px] leading-[1.1em] text-2xl font-bold title-font mb-2 text-white">
+        <h2 class="sm:text-[50px] leading-[1.1em] text-2xl font-bold title-font mb-2 text-white">
           READY TO GET <span className="text-gredient bg-gradient-to-b from-[#00AEEF] to-[#181818] bg-clip-text text-transparent">FUNDED?</span> <br/> THEN LET'S GET
           <span className="text-gredient bg-gradient-to-b from-[#00AEEF] to-[#181818] bg-clip-text text-transparent"> STARTED!</span>
         </h2>

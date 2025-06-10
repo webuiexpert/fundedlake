@@ -8,10 +8,22 @@ function TopBar() {
   if (!visible) return null;
 
   return (
-    <div className='bg-navy flex justify-center items-center md:gap-4 gap-5  md:py-4 pt-10 pb-4 relative'>
-        <span className='lg:text-3xl md:text-2xl text-xl'>🔥</span><h2 className='text-white lg:text-2xl md:text-xl text-[14px] md:w-auto w-[350px] text-center'>Use code TRADE10 for 10% + BOGO off your challenge!</h2>
-        <SquareX onClick={() => setVisible(false)} className='text-white size-7 absolute right-10 top-4 cursor-pointer' />
+   <div className="bg-dark flex flex-col md:flex-row justify-center items-center gap-3 md:gap-4 px-4 md:px-6 py-4 relative w-full">
+    {/* Emoji and Message */}
+    <div className="flex items-center gap-2 text-white text-center">
+      <span className="text-md md:text-2xl lg:text-3xl">🔥</span>
+      <h2 className="text-[10px] md:text-base lg:text-lg font-medium max-w-[350px] md:max-w-none">
+        Use code <span className="font-bold">TRADE10</span> for 10% + BOGO off your challenge!
+      </h2>
     </div>
+
+    {/* Close Button */}
+    <SquareX
+      onClick={() => setVisible(false)}
+      className="text-white size-6 md:size-7 absolute top-2 right-4 md:right-6 cursor-pointer"
+      aria-label="Close promo"
+    />
+  </div>
   )
 }
 

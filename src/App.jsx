@@ -3,9 +3,9 @@ import Home from './pages/Home';
 import WhoWeAre from './pages/WhoWeAre';
 import Faq from './pages/Faq';
 import ContactUs from './pages/ContactUs';
-import Navbar from './components/Navbar';
+import Navbar from './Components/Navbar';
 import Footer from './components/Footer';
-import GiveawayPopup from './components/GiveawayPopup';
+import GiveawayPopup from './Components/GiveawayPopup';
 import useLenis from './hooks/useLenis';
 import TopBar from './Components/TopBar';
 
@@ -21,7 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/who-we-are" element={<WhoWeAre />} />
         <Route path="/faqs" element={<Faq />} />
-        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
       <Footer />
     </Router>

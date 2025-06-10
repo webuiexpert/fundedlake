@@ -15,7 +15,7 @@ function TrustPilotMarquee() {
   return (
     <div className="overflow-hidden md:py-24 whitespace-nowrap bg-[radial-gradient(circle,rgba(2,33,80,1)_6%,rgba(0,0,0,1)_47%)] py-4">
       <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-        <h2 class="sm:text-[72px] leading-[1.1em] text-2xl font-bold title-font mb-2 text-white">
+        <h2 class="sm:text-[50px] leading-[1.1em] text-2xl font-bold title-font mb-2 text-white">
           WATCH SOME OF OUR<br/>
           <span className="text-gredient bg-gradient-to-b from-[#00AEEF] to-[#181818] bg-clip-text text-transparent">TRUST PILOT</span> REVIEWS
         </h2>

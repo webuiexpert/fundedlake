@@ -1,151 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import backgroundImg from "../assets/who-we-are-main-bg.webp"; // replace with your correct image path
-
+import backgroundImg from "../assets/contact-main-bg.webp"; // replace with your correct image path
 
 const ContactUs = () => {
-  const StyledWrapper = styled.div`
-    .form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      max-width: 550px;
-      padding: 20px;
-      border-radius: 20px;
-      position: relative;
-    }
-
-    .title {
-      font-size: 28px;
-      color: royalblue;
-      font-weight: 600;
-      letter-spacing: -1px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      padding-left: 30px;
-    }
-
-    .title::before,
-    .title::after {
-      position: absolute;
-      content: "";
-      height: 16px;
-      width: 16px;
-      border-radius: 50%;
-      left: 0px;
-      background-color: royalblue;
-    }
-
-    .title::before {
-      width: 18px;
-      height: 18px;
-      background-color: royalblue;
-    }
-
-    .title::after {
-      width: 18px;
-      height: 18px;
-      animation: pulse 1s linear infinite;
-    }
-
-    .message,
-    .signin {
-      color: rgba(88, 87, 87, 0.822);
-      font-size: 14px;
-    }
-
-    .signin {
-      text-align: center;
-    }
-
-    .signin a {
-      color: royalblue;
-    }
-
-    .signin a:hover {
-      text-decoration: underline royalblue;
-    }
-
-    .flex {
-      display: flex;
-      width: 100%;
-      gap: 6px;
-    }
-
-    .form label {
-      position: relative;
-    }
-
-    .form label .input {
-      width: 100%;
-      padding: 10px 10px 20px 10px;
-      outline: 0;
-      border: 1px solid rgba(105, 105, 105, 0.397);
-      border-radius: 10px;
-    }
-
-    .form label .input + span {
-      position: absolute;
-      left: 10px;
-      top: 15px;
-      color: grey;
-      font-size: 0.9em;
-      cursor: text;
-      transition: 0.3s ease;
-    }
-
-    .form label .input:placeholder-shown + span {
-      top: 15px;
-      font-size: 0.9em;
-    }
-
-    .form label .input:focus + span,
-    .form label .input:valid + span {
-      top: 30px;
-      font-size: 0.7em;
-      font-weight: 600;
-    }
-
-    .form label .input:valid + span {
-      color: green;
-    }
-
-    .submit {
-      border: none;
-      outline: none;
-      background-color: royalblue;
-      padding: 10px;
-      border-radius: 10px;
-      color: #fff;
-      font-size: 16px;
-      transform: 0.3s ease;
-    }
-
-    .submit:hover {
-      background-color: rgb(56, 90, 194);
-    }
-
-    // @keyframes pulse {
-    //   from {
-    //     transform: scale(0.9);
-    //     opacity: 1;
-    //   }
-
-    //   to {
-    //     transform: scale(1.8);
-    //     opacity: 0;
-    //   }
-    // }
-  `;
-
   return (
-    <StyledWrapper>
-      <div
-        className="relative bg-cover bg-center bg-no-repeat text-white min-h-[80vh]  flex items-center justify-center text-center px-4"
+    <>
+      <div className="font-lexend relative bg-cover bg-center bg-no-repeat text-white md:h-[80vh] h-[40vh]  flex items-center justify-center text-center px-4"
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
-        <div className="absolute inset-0 bg-black opacity-80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#00000065] to-[#000000] opacity-100"></div>
 
         <div className="relative z-10 max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-8xl font-bold uppercase leading-tight">
@@ -153,9 +14,76 @@ const ContactUs = () => {
           </h1>
         </div>
       </div>
-     
-      
-    </StyledWrapper>
+      <div className="bg-gradient-to-b from-[#000] to-[#000c15] mx-auto font-lexend md:px-0 px-4">
+        <div className="md:max-w-4xl mx-auto text-white">
+          <form action="">
+            <div className="name-mail md:flex items-center justify-between gap-5">
+              <div className="user-name md:w-1/2">
+                <label htmlFor="name" className="block text-sm font-medium">
+                  <span className="required text-lg">Name*</span>
+                </label>
+                <input
+                  className="w-full placeholder:text-black mt-2 px-2 py-3 rounded-md"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter Your Name"
+                />
+              </div>
+              <div className="mail md:w-1/2">
+                <label htmlFor="name" className="block text-sm font-medium">
+                  <span className="required text-lg">Email*</span>
+                </label>
+                <input
+                  className="w-full placeholder:text-black mt-2 px-2 py-3 rounded-md"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@gmail.com"
+                />
+              </div>
+            </div>
+            <div className="contact-number w-full mt-4">
+              <label htmlFor="name" className="block text-sm font-medium">
+                <span className="required text-lg">Contact Number*</span>
+              </label>
+              <input
+                className="w-full placeholder:text-black mt-2 px-2 py-3 rounded-md"
+                type="tel"
+                id="number"
+                name="number"
+                placeholder="Your Contact Number"
+              />
+            </div>
+            <div className="subject w-full mt-4">
+              <label htmlFor="name" className="block text-sm font-medium">
+                <span className="required text-lg">Subject*</span>
+              </label>
+              <input
+                className="w-full placeholder:text-black mt-2 px-2 py-3 rounded-md"
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Your Message Subject"
+              />
+            </div>
+            <div className="your-message w-full mt-4">
+              <label htmlFor="name" className="block text-sm font-medium">
+                <span className="required text-lg">Your Message*</span>
+              </label>
+              <textarea
+                className="placeholder:text-black w-full mt-2 px-2 py-3 rounded-md h-[140px]"
+                type="text"
+                id="message"
+                name="message"
+                placeholder="Your Message Here"
+              />
+            </div>
+            <button className="px-4 py-2 bg-secondory rounded-md text-black my-6 hover:scale-[0.8] duration-300 hover:bg-white" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </>
   );
 };
 

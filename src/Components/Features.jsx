@@ -16,7 +16,7 @@ function Features() {
         className="feature-grid grid mt-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-[#181818] text-white"
       >
         <div className="feature-col py-12 flex justify-start items-center flex-col p-4 hover:bg-primary duration-500 hover:bg-bg-primary">
-          <div className="size-[42px] rounded flex items-center justify-center">
+          <div className="size-[58px] rounded flex items-center justify-center">
             <svg
               aria-hidden="true"
               fill="#fff"
@@ -37,11 +37,11 @@ function Features() {
           </p>
         </div>
         <div className="feature-col py-12 flex justify-start items-center flex-col p-4 hover:bg-primary duration-500 hover:bg-bg-primary">
-          <div className="size-[42px] rounded flex items-center justify-center">
+          <div className="size-[58px] rounded flex items-center justify-center">
             <svg
               aria-hidden="true"
               fill="#fff"
-              className="w-[60%]"
+              className="w-[50%]"
               class="e-font-icon-svg e-fas-bolt"
               viewBox="0 0 320 512"
               xmlns="http://www.w3.org/2000/svg"
@@ -50,14 +50,14 @@ function Features() {
             </svg>
           </div>
           <h3 className="text-[#00AEEF] font-bold text-[20px] my-6 text-center">
-            INSTANT FUNDING
+            LIGHTING-FAST PAYOUTS
           </h3>
           <p className="text-white text-[16px] text-center leading-7">
             Withdraw your profits in as little as 24 hours.
           </p>
         </div>
         <div className="feature-col py-12 flex justify-start items-center flex-col p-4 hover:bg-primary duration-500">
-          <div className="size-[42px] rounded flex items-center justify-center">
+          <div className="size-[58px] rounded flex items-center justify-center">
             <span className="text-black text-sm font-semibold">
               <svg
                 aria-hidden="true"
@@ -79,7 +79,7 @@ function Features() {
           </p>
         </div>
         <div className="feature-col py-12 flex justify-start items-center flex-col p-4 hover:bg-primary duration-500 hover:bg-bg-primary">
-          <div className="size-[42px] rounded flex items-center justify-center">
+          <div className="size-[58px] rounded flex items-center justify-center">
             <span className="text-black text-sm font-semibold">
               <svg
                 aria-hidden="true"

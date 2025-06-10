@@ -13,39 +13,63 @@ function Home() {
       <div className="Main-wrapper">
         {/* Hero Section */}
 
-        <div className="hero-section relative flex flex-col items-center justify-center w-full lg:h-screen h-[40vh] overflow-hidden">
+        <div className="hero-section relative w-full h-[80vh] md:h-[60vh] lg:h-auto lg:py-12 overflow-hidden flex items-center justify-center">
           {/* Background Video */}
           <video
-            className="absolute top-0 left-0 w-full h-full  object-cover"
+            className="absolute top-0 left-0 w-full h-full object-cover z-0"
             src={heroVideo}
             autoPlay
             loop
             muted
             playsInline
           />
-          <div className="w-full absolute  z-[9999 w-[100%] h-[100%] bg-gradient-to-b from-[#181818] to-[#f9f9f900]"></div>
-          <div class="relative z-20 top-[20%] h-full flex flex-wrap w-full  mb-10 flex-col items-center text-center">
-            <h2 class="sm:text-[80px] leading-[1.1em] text-3xl font-bold title-font mb-2 text-white">
-              WHERE
-              <span className="text-gredient bg-gradient-to-b from-[#00AEEF] to-[#181818] bg-clip-text text-transparent">
-                {" "}
+
+          {/* Gradient Overlay */}
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#181818] to-transparent z-10" />
+
+          {/* Content */}
+          <div className="relative z-20 flex flex-col items-center text-center px-4 py-10">
+            <h2 className="text-white font-bold text-3xl sm:text-5xl md:text-6xl lg:text-[80px] leading-tight">
+              WHERE{" "}
+              <span className="bg-gradient-to-b from-[#00AEEF] to-[#181818] bg-clip-text text-transparent">
                 TRADERS
               </span>
-              <br /> EMPOWER
-              <span className="text-gredient bg-gradient-to-b from-[#00AEEF] to-[#181818] bg-clip-text text-transparent">
-                {" "}
+              <br />
+              EMPOWER{" "}
+              <span className="bg-gradient-to-b from-[#00AEEF] to-[#181818] bg-clip-text text-transparent">
                 WORLD
               </span>
             </h2>
-            <p className="text-white text-[24px] mx-auto max-w-4xl font-bold my-6">
+
+            <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl max-w-4xl mt-6 font-medium">
               “Lightning-fast payouts, instant funding, no hidden rules or
               consistency requirements - take on challenges with up to $400,000
               in capital!”
             </p>
-            <img src={logo} className="w-[20%] mt-4" alt="logo" />
-            <div className="community-btn mt-10 relative">
-              <img className="absolute size-[100px] -right-32 -top-[140%]" src={blueArrow} alt="" />
-              <a href="https://fundedlakedashboard.propaccount.com/en/affiliates" target="black"><button className="text-white bg-[linear-gradient(180deg,_rgba(0,107,203,1)_0%,_rgba(15,66,94,1)_95%)] hover:scale-[1.1] duration-300 border border2-white rounded-md px-6 py-4 text-2xl font-bold">JOIN OUR DISCORD COMMUNITY</button></a>
+
+            {/* Logo */}
+            <img
+              src={logo}
+              alt="Logo"
+              className="w-[50%] sm:w-[30%] lg:w-[20%] mt-6"
+            />
+
+            {/* Button with Arrow */}
+            <div className="relative mt-10">
+              <img
+                src={blueArrow}
+                alt="arrow"
+                className="absolute w-20 right-[-8rem] top-[-5rem] hidden lg:block"
+              />
+              <a
+                href="https://fundedlakedashboard.propaccount.com/en/affiliates"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="text-white text-lg sm:text-xl lg:text-2xl font-bold bg-gradient-to-b from-[#006BCB] to-[#0F425E] hover:scale-105 duration-300 border border-white rounded-md px-6 py-4">
+                  JOIN OUR DISCORD COMMUNITY
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -55,12 +79,14 @@ function Home() {
         <div class="feature-section font-lexend bg-blackish">
           <Features />
         </div>
-        
-         {/* Steps Section */}
 
-        <div className="bg-blackish lg:py-10 md:py-6 py-6">
-          <h2 className="text-white lg:text-6xl md:4xl text-3xl font-bold uppercase text-center leading-[1.2em] -mt-5">how it works</h2>
-          <WorkSteps />           
+        {/* Steps Section */}
+
+        <div className="bg-blackish lg:py-10 md:py-6 py-6 font-lexend">
+          <h2 className="text-white lg:text-5xl md:4xl text-3xl font-bold uppercase text-center leading-[1.2em] -mt-5">
+            how it works
+          </h2>
+          <WorkSteps />
         </div>
 
         {/* Price Tab Section */}
@@ -80,7 +106,7 @@ function Home() {
         <div class="trade-world-section font-lexend bg-blackish text-white">
           <div class="container w-full max-w-6xl h-100 mx-auto px-4 py-4 lg:px-0 lg:py-16">
             <div class="flex flex-wrap w-full lg:mb-20 mb-10 flex-col items-center text-center">
-              <h2 class="sm:text-[80px] leading-[1.1em] text-3xl font-bold title-font mb-2 text-white">
+              <h2 class="sm:text-[50px] leading-[1.1em] text-3xl font-bold title-font mb-2 text-white">
                 ENABLING{" "}
                 <span className="text-gredient bg-gradient-to-b from-[#00AEEF] to-[#181818] bg-clip-text text-transparent">
                   TRADERS
@@ -151,8 +177,8 @@ function Home() {
             </div>
           </div>
         </div>
- 
-             {/* Trust Pilot Section */}
+
+        {/* Trust Pilot Section */}
 
         <div className="trustpilot-section">
           <TrustPilotMarquee />

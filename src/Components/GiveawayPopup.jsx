@@ -12,7 +12,7 @@ const GiveawayPopup = () => {
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[9999]">
       <div className="relative bg-[#1c1c1c] text-white lg:max-w-4xl w-[90%] p-6 lg:py-12 rounded-lg shadow-lg text-center">
         {/* Close Button */}
         <button
