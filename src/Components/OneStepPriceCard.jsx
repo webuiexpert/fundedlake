@@ -22,11 +22,11 @@ function OneStepPriceCard() {
   return (
     <div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-6 mt-12 lg:w-[80%] mx-auto">
-        <div className="evalution-phase flex flex-col justify-start items-start bg-dark group hover:bg-primary duration-300 rounded-md md:px-8 md:py-12 px-6 py-10">
-          <h3 className=" lg:text-4xl font-extrabold mb-4 uppercase">
+        <div className="evalution-phase flex flex-col justify-start items-start bg-dark group duration-300 md:px-8 md:py-12 px-6 py-10">
+          <h3 className=" lg:text-[27px] font-extrabold mb-4 uppercase">
             <span className="text-[#00AEEF]">Evaluation</span> Phase
           </h3>
-          <hr className="bg-white h-[1px] w-full my-8" />
+          <hr className="bg-blue-900 border border-primary h-[1px] w-full my-8" />
           <div className="w-[100%]">
             <ul className="flex w-[100%] flex-col gap-6">
               {evaluationSteps.map((step, idx) => (
@@ -43,11 +43,11 @@ function OneStepPriceCard() {
             </ul>
           </div>
         </div>
-        <div className="funded flex flex-col justify-start items-start bg-primary hover:bg-dark duration-300 rounded-md md:px-8 md:py-12 px-6 py-10">
-          <h3 className="lg:text-4xl font-extrabold mb-4 uppercase">
+        <div className="funded flex flex-col justify-start items-start bg-primary duration-300 md:px-8 md:py-12 px-6 py-10">
+          <h3 className="lg:text-[27px] font-extrabold mb-4 uppercase">
             <span className="text-[#FFFF]">FUNDED</span>
           </h3>
-          <hr className="bg-white h-[1px] w-full my-8" />
+          <hr className="bg-white border border-white h-[1px] w-full my-8" />
           <div className="w-[100%]">
             <ul className="flex w-[100%] flex-col gap-6">
               {fundedSteps.map((step, idx) => (

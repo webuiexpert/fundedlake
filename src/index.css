@@ -35,7 +35,7 @@ fill: #000;
 }
 .priceTab .react-tabs__tab-list li{
   color: #fff;
-  font-weight: 600;
+  font-weight: 800;
 }
 .priceTab .react-tabs__tab-list li:hover{
   color: #181818;
@@ -44,7 +44,7 @@ fill: #000;
 .react-tabs__tab--selected{
   background-color: #00AEEF !important;
       border-radius: 0 !important;
-      color: #181818 !important;
+      color: #fff !important;
 }
 .InnerPriceTab .react-tabs__tab-list{
   display: flex;
@@ -65,9 +65,6 @@ fill: #000;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-.evalution-phase:hover span{
-  color: #181818;
 }
 
 .marquee-container:before {
@@ -109,5 +106,8 @@ fill: #000;
 }
 .trustPilot-marquee:hover{
   animation-play-state: paused;
+}
+.instant-funding svg.e-font-icon-svg.e-fas-bolt {
+    width: 28px !important;
 }
 

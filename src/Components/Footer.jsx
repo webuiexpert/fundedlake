@@ -7,7 +7,7 @@ function Footer() {
       <div class="container w-full max-w-6xl mx-auto px-4 py-4 lg:px-0 lg:py-6">
         <div className="grid lg:grid-cols-3 items-center gap-4 py-16 text-white">
           <div className="col">            
-            <h3 className="text-[24px] text-white text-center">COMPANY</h3>
+            <h3 className="text-[14px] text-white text-center">COMPANY</h3>
             <ul className="font-semibold text-center mt-5">
               <li className="bg-dark hover:bg-primary duration-500 p-3 mb-2 text-[17px]">
                <a href="https://dashboardanalytix.com/client-terms-and-policies/?v=13b5bfe96f3e" target="_blank" >Terms of Use</a></li>
@@ -17,7 +17,7 @@ function Footer() {
             </ul>
           </div>
           <div className="col">            
-            <h3 className="text-[24px] text-white text-center">COMMUNITY</h3>
+            <h3 className="text-[14px] text-white text-center">COMMUNITY</h3>
             <ul className="font-semibold text-center mt-5">
               <li className="bg-dark hover:bg-primary duration-500 p-3 mb-2 text-[17px]">
                 <Link to='/who-we-are'>About Us</Link>
@@ -28,7 +28,7 @@ function Footer() {
             </ul>
           </div>
           <div className="col">            
-            <h3 className="text-[24px] text-white text-center">LEGAL</h3>
+            <h3 className="text-[14px] text-white text-center">LEGAL</h3>
             <ul className="font-semibold text-center mt-5">
               <li className="bg-dark hover:bg-primary duration-500 p-3 mb-2 text-[17px]">
                 <a href="https://dashboardanalytix.com/client-terms-and-policies" target="_blank" >Terms and Conditions</a> 

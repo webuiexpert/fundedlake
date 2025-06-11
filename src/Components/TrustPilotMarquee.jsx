@@ -17,7 +17,7 @@ function TrustPilotMarquee() {
       <div class="flex flex-wrap w-full mb-16 flex-col items-center text-center">
         <h2 class="sm:text-[50px] leading-[1.1em] text-2xl font-bold title-font mb-2 text-white">
           WATCH SOME OF OUR<br/>
-          <span className="text-gredient bg-gradient-to-b from-[#00AEEF] to-[#181818] bg-clip-text text-transparent">TRUST PILOT</span> REVIEWS
+          <span className="text-gredient text-primary">TRUST PILOT</span> REVIEWS
         </h2>
       </div>
       <div className="trustPilot-container relative">

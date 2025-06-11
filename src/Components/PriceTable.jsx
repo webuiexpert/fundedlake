@@ -5,7 +5,7 @@ import TwoStepPriceCard from "./TwoStepPriceCard";
 import InstantPriceCard from "./InstantPriceCard";
 
 export default () => (
-  <Tabs className="priceTab lg:text-lg md:text-lg text-sm text-white">
+  <Tabs className="priceTab md:text-[14px] font-bold text-sm text-white">
     <TabList className="priceTabUl">
       <Tab className="cursor-pointer p-6 bg-dark hover:bg-white duration-200 hover:text-dark rounded-none">
         ONE STEP
@@ -44,7 +44,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -59,7 +59,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=100" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -74,7 +74,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=101" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -89,7 +89,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=102" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -104,7 +104,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=103" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -119,7 +119,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=104" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -152,7 +152,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=160" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -167,7 +167,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=161" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -182,7 +182,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=162" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -197,7 +197,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -212,7 +212,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=164" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -227,7 +227,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=165" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -259,7 +259,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=180" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -274,7 +274,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=181" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -289,7 +289,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=182" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -304,7 +304,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=183" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -319,7 +319,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=184" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -334,7 +334,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=103" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
@@ -349,7 +349,7 @@ export default () => (
             </h2>
             <a
               href="https://fundedlakedashboard.propaccount.com/en/challenges?planid=104" target="_blank"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold rounded"
+              className="bg-sky-500 hover:bg-white hover:text-black duration:300 text-white px-4 py-2 font-bold rounded text-[15px]"
             >
               <button>GET FUNDED</button>
             </a>
