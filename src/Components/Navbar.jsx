@@ -1,5 +1,5 @@
 // src/components/Navbar.jsx
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import { Menu } from 'lucide-react'
 import logo from '../assets/logo.webp'
@@ -8,29 +8,32 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-dark text-white shadow-md font-lexend sticky top-0 z-[999]">
-      <div className="container w-full max-w-6xl h-100 mx-auto px-4 py-4 md:py-6 lg:px-0 lg:py-3 flex items-center justify-between">
+    <nav className="bg-dark text-white shadow-md font-lexend sticky -top-[1px] z-[999]">
+      <div className="w-full max-w-7xl h-100 mx-auto px-4 py-4 md:py-6 lg:px-0 lg:py-3 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="text-xl font-bold flex items-center space-x-2">
+        <NavLink to="/" className="text-xl font-bold flex items-center space-x-2" >
           <img src={logo} alt="logo"  />
-            </Link>
+            </NavLink>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex items-center space-x-8">
-          <Link to="/who-we-are" className="hover:text-primary">
+        <div className="hidden lg:flex items-center space-x-2">
+          <NavLink  to="/who-we-are" className={({ isActive }) =>
+    `px-5 py-1 hover:text-white hover:bg-primary duration-300 ${ isActive ? 'bg-primary text-white' : 'text-white'}`} >
             WHO WE ARE
-          </Link>
-          <Link to="/faqs" className="hover:text-primary">
+          </NavLink>
+          <NavLink to="/faqs" className={({ isActive }) =>
+    `px-5 py-1 hover:text-white hover:bg-primary duration-300 ${ isActive ? 'bg-primary text-white' : 'text-white'}`}>
             FAQS
-          </Link>
-          <Link to="/contact-us" className="hover:text-primary">
+          </NavLink>
+          <NavLink to="/contact-us" className={({ isActive }) =>
+    `px-5 py-1 hover:text-white hover:bg-primary duration-300 ${ isActive ? 'bg-primary text-white' : 'text-white'}`}>
             CONTACT US
-          </Link>
-          <a className='hover:text-primary' href="https://fundedlakedashboard.propaccount.com/en/affiliates" target='_blank'>AFFILIATE PROGRAM</a>
+          </NavLink>
+          <a className='px-5 py-1 hover:text-white hover:bg-primary duration-300' href="https://fundedlakedashboard.propaccount.com/en/affiliates" target='_blank'>AFFILIATE PROGRAM</a>
         </div>
 
         {/* Buttons */}
-        <div className="hidden lg:flex space-x-4">
+        <div className="hidden lg:flex space-x-2">
           <a href='https://fundedlakedashboard.propaccount.com/en/sign-in' className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold text-sm">
             DASHBOARD
           </a>
@@ -51,16 +54,28 @@ const Navbar = () => {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="lg:hidden mt-3 space-y-2 text-center flex flex-col md:items-center md:justify-center md:px-0 px-4 pb-6 items-start md:gap-4 gap-5">
-          <Link to="/who-we-are" className="block hover:text-primary">WHO WE ARE</Link>
-          <Link to="/faqs" className="block hover:text-primary">FAQS</Link>
-          <Link to="/contact-us" className="block hover:text-primary">CONTACT US</Link>
-          <a className='hover:text-primary' href="https://fundedlakedashboard.propaccount.com/en/affiliates" target='_blank'>AFFILIATE PROGRAM</a>
-          <Link to="/dashboard" className="block bg-sky-500 text-white md:max-w-[260px] px-4 py-2 font-bold">
+           <NavLink  to="/who-we-are" className={({ isActive }) =>
+    `px-5 py-1 hover:text-white hover:bg-primary duration-300 ${ isActive ? 'bg-primary text-white' : 'text-white'}`} >
+            WHO WE ARE
+          </NavLink>
+          <NavLink to="/faqs" className={({ isActive }) =>
+    `px-5 py-1 hover:text-white hover:bg-primary duration-300 ${ isActive ? 'bg-primary text-white' : 'text-white'}`}>
+            FAQS
+          </NavLink>
+          <NavLink to="/contact-us" className={({ isActive }) =>
+    `px-5 py-1 hover:text-white hover:bg-primary duration-300 ${ isActive ? 'bg-primary text-white' : 'text-white'}`}>
+            CONTACT US
+          </NavLink>
+          <a className='px-5 py-1 hover:text-white hover:bg-primary duration-300' href="https://fundedlakedashboard.propaccount.com/en/affiliates" target='_blank'>AFFILIATE PROGRAM</a>
+          {/* Buttons */}
+        <div className="lg:flex space-x-2">
+          <a href='https://fundedlakedashboard.propaccount.com/en/sign-in' className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 font-bold text-sm">
             DASHBOARD
-          </Link>
-          <Link to="/get-funded" className="block bg-secondory text-black md:max-w-[260px] px-4 py-2 font-bold">
+          </a>
+          <a href='https://fundedlakedashboard.propaccount.com/en/challenges?planid=163' className="bg-secondory hover:bg-yellow-500 text-black px-4 py-2 font-bold text-sm">
             GET FUNDED
-          </Link>
+          </a>
+        </div>
         </div>
       )}
     </nav>

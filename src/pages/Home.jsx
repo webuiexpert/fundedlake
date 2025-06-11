@@ -13,7 +13,7 @@ function Home() {
       <div className="Main-wrapper">
         {/* Hero Section */}
 
-        <div className="hero-section relative w-full h-[80vh] md:h-[60vh] lg:h-auto lg:py-12 overflow-hidden flex items-center justify-center">
+        <div className="hero-section relative w-full h-[80vh] md:h-[60vh] lg:h-auto lg:py-20 overflow-hidden flex items-center justify-center">
           {/* Background Video */}
           <video
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
